@@ -22,7 +22,6 @@ var evalQuery = function(dataset, queryFile, sampleSize, _queryObj, callback) {
         graph += '_' + sampleSize;
     }
     queryObj.from['default'] = [graph];
-    
     var start = new Date();
     request
         .post(config.endpoint)
@@ -41,7 +40,6 @@ var evalQuery = function(dataset, queryFile, sampleSize, _queryObj, callback) {
 //            } else {
 //                console.log(res);
 //            }
-//            process.exit(1);
             callback();
             processQueue();
         });
@@ -85,9 +83,9 @@ var processQueue = function() {
                         writeResultsForDataset(dataset);
                         delete queue[dataset];
                     }
-                    return;
+                    
                 });
-                
+                return;
                 
                 
             }
