@@ -1,6 +1,0 @@
-{
-    "endpoint": "http://virtuoso.lrd900.eculture3.labs.vu.nl/sparql",
-    "datasets": ["swdf", "bio2rdf", "obm", "lgd", "metalex", "dbpedia"],
-    "queries": "queries",
-    "results": "results"
-}

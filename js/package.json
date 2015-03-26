@@ -10,6 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^3.5.0",
-    "node-fs-extra": "^0.8.1"
+    "node-fs-extra": "^0.8.1",
+    "superagent": "^1.1.0",
+    "sparqljs": "^1.1.0",
+    "csv-stringify": "0.0.6"
   }
 }
