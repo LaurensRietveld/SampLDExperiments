@@ -23,6 +23,7 @@ var evalQuery = function(dataset, queryFile, sampleSize, _queryObj, callback) {
     }
     queryObj.from['default'] = [graph];
     var start = new Date();
+    console.log(generator.stringify(queryObj));
     request
         .post(config.endpoint)
         .query({ query: generator.stringify(queryObj)})
